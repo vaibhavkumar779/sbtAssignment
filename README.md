@@ -13,3 +13,5 @@
 scala version : 2.12.15 
 java version : openjdk 11.0.11 2021-04-20
 sbt version : 1.5.5
+
+I have used Visual Studio Code for running the codes so used the extension Metal Scala
