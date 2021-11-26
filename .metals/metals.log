@@ -1,0 +1,971 @@
+[0m2021.11.26 15:44:16 INFO  Started: Metals version 0.10.9 in workspace '/home/knoldus/Knoldus/sbtAssignment' for client Visual Studio Code 1.62.3.[0m
+[0m2021.11.26 15:44:18 INFO  time: initialize in 2.34s[0m
+[0m2021.11.26 15:44:19 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.26 15:44:20 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/build.sbt[0m
+Nov 26, 2021 3:44:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Nov 26, 2021 3:44:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Nov 26, 2021 3:44:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Nov 26, 2021 3:44:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+[0m2021.11.26 15:44:25 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.26 15:44:27 INFO  time: code lens generation in 7.07s[0m
+[0m2021.11.26 15:44:27 INFO  time: code lens generation in 6.66s[0m
+[0m2021.11.26 15:44:27 INFO  time: code lens generation in 7.18s[0m
+[0m2021.11.26 15:44:27 INFO  time: code lens generation in 7.03s[0m
+Nov 26, 2021 3:44:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+Nov 26, 2021 3:44:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 1 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 16 more
+
+[0m2021.11.26 15:44:55 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/build.sbt[0m
+[0m2021.11.26 15:44:55 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/build.sbt[0m
+[0m2021.11.26 15:44:58 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals1174930903635140999/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.26 15:44:58 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/metals.sbt[0m
+[0m2021.11.26 15:44:58 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/project/metals.sbt[0m
+[0m2021.11.26 15:44:59 INFO  [info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)[0m
+[0m2021.11.26 15:45:04 INFO  [info] loading settings for project sbtassignment-build-build from metals.sbt ...[0m
+[0m2021.11.26 15:45:06 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project[0m
+[0m2021.11.26 15:45:09 INFO  [info] loading settings for project sbtassignment-build from metals.sbt ...[0m
+[0m2021.11.26 15:45:09 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project[0m
+[0m2021.11.26 15:45:14 INFO  [success] Generated .bloop/sbtassignment-build.json[0m
+[0m2021.11.26 15:45:14 INFO  [success] Total time: 5 s, completed 26-Nov-2021, 3:45:14 PM[0m
+[0m2021.11.26 15:45:17 INFO  [info] loading settings for project sbtassignment from build.sbt ...[0m
+[0m2021.11.26 15:45:17 INFO  [info] set current project to hello (in build file:/home/knoldus/Knoldus/sbtAssignment/)[0m
+[0m2021.11.26 15:45:19 INFO  [warn] [0m
+[0m2021.11.26 15:45:19 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.26 15:45:19 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading org.scala-lang:scala-library:2.12.30[0m
+[0m2021.11.26 15:45:19 INFO  [error]   Not found[0m
+[0m2021.11.26 15:45:19 INFO  [error]   Not found[0m
+[0m2021.11.26 15:45:19 INFO  [error]   not found: /home/knoldus/.ivy2/localorg.scala-lang/scala-library/2.12.30/ivys/ivy.xml[0m
+[0m2021.11.26 15:45:19 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.30/scala-library-2.12.30.pom[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m2021.11.26 15:45:19 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m2021.11.26 15:45:19 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading org.scala-lang:scala-library:2.12.30[0m
+[0m2021.11.26 15:45:19 INFO  [error]   Not found[0m
+[0m2021.11.26 15:45:19 INFO  [error]   Not found[0m
+[0m2021.11.26 15:45:19 INFO  [error]   not found: /home/knoldus/.ivy2/localorg.scala-lang/scala-library/2.12.30/ivys/ivy.xml[0m
+[0m2021.11.26 15:45:19 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.30/scala-library-2.12.30.pom[0m
+[0m2021.11.26 15:45:19 INFO  [error] Total time: 2 s, completed 26-Nov-2021, 3:45:19 PM[0m
+[0m2021.11.26 15:45:19 INFO  time: ran 'sbt bloopInstall' in 21s[0m
+[0m2021.11.26 15:45:19 ERROR sbt command failed: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals1174930903635140999/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.26 15:45:24 INFO  skipping build import with status 'Dismissed'[0m
+[0m2021.11.26 15:47:15 INFO  shutting down Metals[0m
+[0m2021.11.26 15:47:50 INFO  Started: Metals version 0.10.9 in workspace '/home/knoldus/Knoldus/sbtAssignment' for client Visual Studio Code 1.62.3.[0m
+[0m2021.11.26 15:47:53 INFO  time: initialize in 2.89s[0m
+[0m2021.11.26 15:47:55 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.26 15:47:55 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/build.sbt[0m
+[0m2021.11.26 15:47:55 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.26 15:48:00 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+Nov 26, 2021 3:48:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23
+Nov 26, 2021 3:48:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 1.74s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 1.64s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 1.75s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 1.72s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 7.66s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 7.66s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 1.73s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 6.59s[0m
+[0m2021.11.26 15:48:03 INFO  time: code lens generation in 7.6s[0m
+[0m2021.11.26 15:49:50 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/src/main/scala/hello.scala[0m
+Nov 26, 2021 3:49:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43
+[0m2021.11.26 15:49:59 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/build.sbt[0m
+[0m2021.11.26 15:49:59 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.26 15:49:59 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/build.sbt[0m
+[0m2021.11.26 15:49:59 INFO  skipping build import with status 'Failed'[0m
+Nov 26, 2021 3:50:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+[0m2021.11.26 15:50:12 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/src/main/scala/hello.scala[0m
+[0m2021.11.26 15:57:03 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/build.sbt[0m
+[0m2021.11.26 15:57:06 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals17969798976925920827/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.26 15:57:08 INFO  [info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)[0m
+[0m2021.11.26 15:57:10 INFO  [info] loading settings for project sbtassignment-build-build from metals.sbt ...[0m
+[0m2021.11.26 15:57:11 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project[0m
+[0m2021.11.26 15:57:13 INFO  [info] loading settings for project sbtassignment-build from metals.sbt ...[0m
+[0m2021.11.26 15:57:13 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project[0m
+Nov 26, 2021 3:57:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 93
+[0m2021.11.26 15:57:18 INFO  [success] Generated .bloop/sbtassignment-build.json[0m
+[0m2021.11.26 15:57:18 INFO  [success] Total time: 4 s, completed 26-Nov-2021, 3:57:18 PM[0m
+[0m2021.11.26 15:57:21 INFO  [info] loading settings for project sbtassignment from build.sbt ...[0m
+[0m2021.11.26 15:57:21 INFO  [info] set current project to hello (in build file:/home/knoldus/Knoldus/sbtAssignment/)[0m
+[0m2021.11.26 15:57:24 INFO  [success] Generated .bloop/sbtassignment-test.json[0m
+[0m2021.11.26 15:57:24 INFO  [success] Generated .bloop/sbtassignment.json[0m
+[0m2021.11.26 15:57:24 INFO  [success] Total time: 3 s, completed 26-Nov-2021, 3:57:24 PM[0m
+[0m2021.11.26 15:57:25 INFO  time: ran 'sbt bloopInstall' in 18s[0m
+[0m2021.11.26 15:57:25 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher888690553969873961/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/home/knoldus/Knoldus/sbtAssignment/.bloop'...
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/sbtassignment.json'
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/sbtassignment-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.15.
+[0m[32m[D][0m   => /home/knoldus/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar
+[0m[32m[D][0m   => /home/knoldus/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => /home/knoldus/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.15/scala-compiler-2.12.15.jar
+[0m[32m[D][0m   => /home/knoldus/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.15/scala-library-2.12.15.jar
+[0m[32m[D][0m   => /home/knoldus/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.15/scala-reflect-2.12.15.jar
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher888690553969873961/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher888690553969873961/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 15:57:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 15:57:30 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher13982103268474224888/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher13982103268474224888/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher13982103268474224888/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 15:57:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 15:57:30 INFO  time: Connected to build server in 5.28s[0m
+[0m2021.11.26 15:57:30 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.26 15:57:32 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.11.26 15:57:39 INFO  time: indexed workspace in 8.6s[0m
+[0m2021.11.26 15:57:40 INFO  compiling sbtassignment (1 scala source)[0m
+[0m2021.11.26 15:57:42 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.11.26 15:58:21 INFO  time: compiled sbtassignment in 41s[0m
+Nov 26, 2021 4:00:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 160
+Nov 26, 2021 4:00:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 161
+[0m2021.11.26 16:11:09 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5969288651108525497/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.26 16:11:11 INFO  [info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)[0m
+[0m2021.11.26 16:11:11 INFO  [info] loading settings for project sbtassignment-build-build from metals.sbt ...[0m
+[0m2021.11.26 16:11:12 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project[0m
+[0m2021.11.26 16:11:12 INFO  [info] loading settings for project sbtassignment-build from metals.sbt ...[0m
+[0m2021.11.26 16:11:12 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project[0m
+[0m2021.11.26 16:11:15 INFO  [success] Generated .bloop/sbtassignment-build.json[0m
+[0m2021.11.26 16:11:15 INFO  [success] Total time: 2 s, completed 26-Nov-2021, 4:11:15 PM[0m
+[0m2021.11.26 16:11:18 INFO  [info] loading settings for project sbtassignment from build.sbt ...[0m
+[0m2021.11.26 16:11:18 INFO  [info] set current project to hello (in build file:/home/knoldus/Knoldus/sbtAssignment/)[0m
+[0m2021.11.26 16:11:18 INFO  [success] Generated .bloop/sbtassignment-test.json[0m
+[0m2021.11.26 16:11:18 INFO  [success] Generated .bloop/sbtassignment.json[0m
+[0m2021.11.26 16:11:22 INFO  [warn] [0m
+[0m2021.11.26 16:11:22 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.26 16:11:22 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:11:22 INFO  [error]   Not found[0m
+[0m2021.11.26 16:11:22 INFO  [error]   Not found[0m
+[0m2021.11.26 16:11:22 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:11:22 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m2021.11.26 16:11:22 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m2021.11.26 16:11:22 INFO  [error] (common / update) sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:11:22 INFO  [error]   Not found[0m
+[0m2021.11.26 16:11:22 INFO  [error]   Not found[0m
+[0m2021.11.26 16:11:22 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:11:22 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:11:22 INFO  [error] Total time: 3 s, completed 26-Nov-2021, 4:11:22 PM[0m
+[0m2021.11.26 16:11:22 INFO  time: ran 'sbt bloopInstall' in 12s[0m
+[0m2021.11.26 16:11:22 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.26 16:11:22 ERROR sbt command failed: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5969288651108525497/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.26 16:11:22 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.26 16:11:22 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.26 16:11:22 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8931571324235711021/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/knoldus/Knoldus/sbtAssignment/.bloop'...
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/sbtassignment-test.json'
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/sbtassignment.json'
+[0m[32m[D][0m Configured Scala SemanticDB in projects 'sbtassignment', 'sbtassignment-test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8931571324235711021/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8931571324235711021/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:11:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:11:22 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7473972872222363911/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7473972872222363911/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7473972872222363911/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:11:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:11:22 INFO  time: Connected to build server in 89ms[0m
+[0m2021.11.26 16:11:22 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.26 16:11:24 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.11.26 16:11:24 INFO  time: indexed workspace in 1.22s[0m
+[0m2021.11.26 16:11:25 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.11.26 16:11:25 INFO  time: code lens generation in 1.44s[0m
+[0m2021.11.26 16:15:52 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals11222955802743630144/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.26 16:15:53 INFO  [info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)[0m
+[0m2021.11.26 16:15:53 INFO  [info] loading settings for project sbtassignment-build-build from metals.sbt ...[0m
+[0m2021.11.26 16:15:55 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project[0m
+[0m2021.11.26 16:15:55 INFO  [info] loading settings for project sbtassignment-build from metals.sbt ...[0m
+[0m2021.11.26 16:15:56 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project[0m
+[0m2021.11.26 16:15:57 INFO  [success] Generated .bloop/sbtassignment-build.json[0m
+[0m2021.11.26 16:15:57 INFO  [success] Total time: 2 s, completed 26-Nov-2021, 4:15:58 PM[0m
+[0m2021.11.26 16:16:00 INFO  [info] loading settings for project sbtassignment from build.sbt ...[0m
+[0m2021.11.26 16:16:00 INFO  [info] set current project to hello (in build file:/home/knoldus/Knoldus/sbtAssignment/)[0m
+[0m2021.11.26 16:16:00 INFO  [success] Generated .bloop/sbtassignment.json[0m
+[0m2021.11.26 16:16:00 INFO  [success] Generated .bloop/sbtassignment-test.json[0m
+[0m2021.11.26 16:16:02 INFO  [warn] [0m
+[0m2021.11.26 16:16:02 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.26 16:16:02 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:16:02 INFO  [error]   Not found[0m
+[0m2021.11.26 16:16:02 INFO  [error]   Not found[0m
+[0m2021.11.26 16:16:02 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:16:02 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m2021.11.26 16:16:02 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m2021.11.26 16:16:02 INFO  [error] (common / update) sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:16:02 INFO  [error]   Not found[0m
+[0m2021.11.26 16:16:02 INFO  [error]   Not found[0m
+[0m2021.11.26 16:16:02 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:16:02 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:16:02 INFO  [error] Total time: 2 s, completed 26-Nov-2021, 4:16:03 PM[0m
+[0m2021.11.26 16:16:03 INFO  time: ran 'sbt bloopInstall' in 11s[0m
+[0m2021.11.26 16:16:03 ERROR sbt command failed: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals11222955802743630144/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.26 16:16:03 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.26 16:16:03 INFO  Shut down connection with build server.[0m
+[0m2021.11.26 16:16:03 INFO  Shut down connection with build server.[0m
+[0m2021.11.26 16:16:03 INFO  Attempting to connect to the build server...[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1753066102933034048/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/knoldus/Knoldus/sbtAssignment/.bloop'...
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/sbtassignment-test.json'
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/sbtassignment.json'
+[0m[32m[D][0m Configured Scala SemanticDB in projects 'sbtassignment', 'sbtassignment-test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1753066102933034048/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1753066102933034048/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:16:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:16:03 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher12175241473568008852/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher12175241473568008852/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher12175241473568008852/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:16:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:16:03 INFO  time: Connected to build server in 0.15s[0m
+[0m2021.11.26 16:16:03 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.26 16:16:04 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.11.26 16:16:04 INFO  time: indexed workspace in 1.23s[0m
+[0m2021.11.26 16:16:06 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.11.26 16:16:06 INFO  time: code lens generation in 1.64s[0m
+[0m2021.11.26 16:16:26 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals18335098533684553618/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.26 16:16:27 INFO  [info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)[0m
+[0m2021.11.26 16:16:27 INFO  [info] loading settings for project sbtassignment-build-build from metals.sbt ...[0m
+[0m2021.11.26 16:16:29 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project[0m
+[0m2021.11.26 16:16:29 INFO  [info] loading settings for project sbtassignment-build from metals.sbt ...[0m
+[0m2021.11.26 16:16:29 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project[0m
+[0m2021.11.26 16:16:32 INFO  [success] Generated .bloop/sbtassignment-build.json[0m
+[0m2021.11.26 16:16:32 INFO  [success] Total time: 2 s, completed 26-Nov-2021, 4:16:32 PM[0m
+[0m2021.11.26 16:16:34 ERROR /home/knoldus/Knoldus/sbtAssignment/build.sbt:22: error: value aggregates is not a member of sbt.Project[0m
+[0m2021.11.26 16:16:34 ERROR lazy val root = project.in(file(".")).aggregates(common,persistence)[0m
+[0m2021.11.26 16:16:34 ERROR                                       ^[0m
+[0m2021.11.26 16:16:34 ERROR sbt.compiler.EvalException: Type error in expression[0m
+[0m2021.11.26 16:16:34 INFO  [error] sbt.compiler.EvalException: Type error in expression[0m
+[0m2021.11.26 16:16:34 INFO  [error] Use 'last' for the full log.[0m
+[0m2021.11.26 16:16:34 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)[0m
+[0m2021.11.26 16:16:35 INFO  time: ran 'sbt bloopInstall' in 8.92s[0m
+[0m2021.11.26 16:16:35 ERROR sbt command failed: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals18335098533684553618/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.26 16:16:35 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.26 16:16:35 INFO  Shut down connection with build server.[0m
+[0m2021.11.26 16:16:35 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.11.26 16:16:35 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher16227214665610181384/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher16227214665610181384/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher16227214665610181384/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:16:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:16:35 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2289993053172939113/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2289993053172939113/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2289993053172939113/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:16:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:16:35 INFO  time: Connected to build server in 0.15s[0m
+[0m2021.11.26 16:16:35 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.26 16:16:36 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.11.26 16:16:36 INFO  time: indexed workspace in 1.48s[0m
+[0m2021.11.26 16:16:38 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.11.26 16:16:38 INFO  time: code lens generation in 1.57s[0m
+[0m2021.11.26 16:17:22 INFO  skipping build import with status 'Failed'[0m
+Nov 26, 2021 4:21:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1002
+Nov 26, 2021 4:21:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/knoldus/Knoldus/sbtAssignment/Plugins.sbt",
+        "type": 3
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/knoldus/Knoldus/sbtAssignment/Plugins.sbt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:1338)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:1337)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:1337)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:1281)
+	... 16 more
+
+[0m2021.11.26 16:22:40 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/metals.sbt[0m
+Nov 26, 2021 4:25:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1022
+[0m2021.11.26 16:25:33 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals1408185497461819420/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.26 16:25:35 INFO  [info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)[0m
+[0m2021.11.26 16:25:36 INFO  [info] loading settings for project sbtassignment-build-build from metals.sbt ...[0m
+[0m2021.11.26 16:25:38 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project[0m
+[0m2021.11.26 16:25:39 INFO  [info] loading settings for project sbtassignment-build from metals.sbt ...[0m
+[0m2021.11.26 16:25:39 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project[0m
+[0m2021.11.26 16:25:46 INFO  [success] Generated .bloop/sbtassignment-build.json[0m
+[0m2021.11.26 16:25:46 INFO  [success] Total time: 6 s, completed 26-Nov-2021, 4:25:46 PM[0m
+[0m2021.11.26 16:25:46 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.26 16:25:47 INFO  [info] set current project to hello (in build file:/home/knoldus/Knoldus/sbtAssignment/)[0m
+[0m2021.11.26 16:25:47 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.11.26 16:25:47 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.11.26 16:25:49 INFO  [warn] [0m
+[0m2021.11.26 16:25:49 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.26 16:25:49 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:25:49 INFO  [error]   Not found[0m
+[0m2021.11.26 16:25:49 INFO  [error]   Not found[0m
+[0m2021.11.26 16:25:49 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:25:49 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m2021.11.26 16:25:49 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m2021.11.26 16:25:49 INFO  [error] (common / update) sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:25:49 INFO  [error]   Not found[0m
+[0m2021.11.26 16:25:49 INFO  [error]   Not found[0m
+[0m2021.11.26 16:25:49 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:25:49 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:25:49 INFO  [error] Total time: 2 s, completed 26-Nov-2021, 4:25:49 PM[0m
+[0m2021.11.26 16:25:50 INFO  time: ran 'sbt bloopInstall' in 16s[0m
+[0m2021.11.26 16:25:50 ERROR sbt command failed: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals1408185497461819420/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.26 16:25:50 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.26 16:25:50 INFO  Shut down connection with build server.[0m
+[0m2021.11.26 16:25:50 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.11.26 16:25:50 INFO  Attempting to connect to the build server...[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8494621074746920623/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/knoldus/Knoldus/sbtAssignment/.bloop'...
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/knoldus/Knoldus/sbtAssignment/.bloop/root.json'
+[0m[32m[D][0m Configured Scala SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8494621074746920623/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8494621074746920623/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:25:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:25:50 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3379879407210906389/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3379879407210906389/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3379879407210906389/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:25:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:25:50 INFO  time: Connected to build server in 87ms[0m
+[0m2021.11.26 16:25:50 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.26 16:25:51 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.11.26 16:25:51 INFO  time: indexed workspace in 1.28s[0m
+[0m2021.11.26 16:25:51 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/metals.sbt[0m
+[0m2021.11.26 16:25:53 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.11.26 16:25:53 INFO  time: code lens generation in 1.5s[0m
+Nov 26, 2021 4:26:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

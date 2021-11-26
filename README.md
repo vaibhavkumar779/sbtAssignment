@@ -10,6 +10,6 @@
 - add plugins to the project- codesquad-sbt-plugin and scalastyle-sbt-plugin
 - Finally add one last module "root" and aggregate all other modules in this root module
 
-scala version : 2.12.30 
+scala version : 2.12.15 
 java version : openjdk 11.0.11 2021-04-20
 sbt version : 1.5.5
