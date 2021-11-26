@@ -1069,3 +1069,167 @@ Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not install
 	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:1279)
 	... 16 more
 
+Nov 26, 2021 4:29:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "git:/home/knoldus/Knoldus/sbtAssignment/build.sbt?%7B%22path%22%3A%22%2Fhome%2Fknoldus%2FKnoldus%2FsbtAssignment%2Fbuild.sbt%22%2C%22ref%22%3A%22HEAD%22%7D",
+        "type": 2
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:582)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:579)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didChangeWatchedFiles$1(MetalsLanguageServer.scala:1278)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:514)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toSeq(TraversableOnce.scala:354)
+	at scala.collection.TraversableOnce.toSeq$(TraversableOnce.scala:354)
+	at scala.collection.AbstractIterator.toSeq(Iterator.scala:1431)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:1279)
+	... 16 more
+
+[0m2021.11.26 16:29:48 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/metals.sbt[0m
+[0m2021.11.26 16:33:20 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/Plugins.sbt[0m
+[0m2021.11.26 16:33:20 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/Plugins.sbt[0m
+[0m2021.11.26 16:33:20 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.26 16:35:10 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/metals.sbt[0m
+[0m2021.11.26 16:39:42 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/Plugins.sbt[0m
+[0m2021.11.26 16:39:42 WARN  no build target for: /home/knoldus/Knoldus/sbtAssignment/project/Plugins.sbt[0m
+[0m2021.11.26 16:39:45 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5117761270575161633/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.26 16:39:46 INFO  [info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)[0m
+[0m2021.11.26 16:39:49 INFO  [info] loading settings for project sbtassignment-build-build-build from metals.sbt ...[0m
+[0m2021.11.26 16:39:49 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project/project[0m
+[0m2021.11.26 16:39:51 INFO  [info] loading settings for project sbtassignment-build-build from metals.sbt ...[0m
+[0m2021.11.26 16:39:51 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project/project[0m
+[0m2021.11.26 16:39:53 INFO  [success] Generated .bloop/sbtassignment-build-build.json[0m
+[0m2021.11.26 16:39:53 INFO  [success] Total time: 2 s, completed 26-Nov-2021, 4:39:53 PM[0m
+[0m2021.11.26 16:39:53 INFO  [info] loading settings for project sbtassignment-build from metals.sbt,Plugins.sbt ...[0m
+[0m2021.11.26 16:39:53 INFO  [info] loading project definition from /home/knoldus/Knoldus/sbtAssignment/project[0m
+[0m2021.11.26 16:40:04 INFO  [success] Generated .bloop/sbtassignment-build.json[0m
+[0m2021.11.26 16:40:04 INFO  [success] Total time: 10 s, completed 26-Nov-2021, 4:40:04 PM[0m
+[0m2021.11.26 16:40:05 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.26 16:40:05 INFO  [info] set current project to hello (in build file:/home/knoldus/Knoldus/sbtAssignment/)[0m
+[0m2021.11.26 16:40:05 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.11.26 16:40:05 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.11.26 16:40:06 INFO  [warn] [0m
+[0m2021.11.26 16:40:06 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.26 16:40:06 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:40:06 INFO  [error]   Not found[0m
+[0m2021.11.26 16:40:06 INFO  [error]   Not found[0m
+[0m2021.11.26 16:40:06 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:40:06 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m2021.11.26 16:40:06 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m2021.11.26 16:40:06 INFO  [error] (common / update) sbt.librarymanagement.ResolveException: Error downloading puppetlabs:typesafe-config:0.2.0[0m
+[0m2021.11.26 16:40:06 INFO  [error]   Not found[0m
+[0m2021.11.26 16:40:06 INFO  [error]   Not found[0m
+[0m2021.11.26 16:40:06 INFO  [error]   not found: /home/knoldus/.ivy2/localpuppetlabs/typesafe-config/0.2.0/ivys/ivy.xml[0m
+[0m2021.11.26 16:40:06 INFO  [error]   not found: https://repo1.maven.org/maven2/puppetlabs/typesafe-config/0.2.0/typesafe-config-0.2.0.pom[0m
+[0m2021.11.26 16:40:06 INFO  [error] Total time: 1 s, completed 26-Nov-2021, 4:40:07 PM[0m
+[0m2021.11.26 16:40:07 INFO  time: ran 'sbt bloopInstall' in 21s[0m
+[0m2021.11.26 16:40:07 ERROR sbt command failed: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5117761270575161633/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.26 16:40:07 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.26 16:40:07 INFO  Shut down connection with build server.[0m
+[0m2021.11.26 16:40:07 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.11.26 16:40:07 INFO  Attempting to connect to the build server...[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher16893696132510276538/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher16893696132510276538/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher16893696132510276538/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:40:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:40:07 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.11.26 16:40:07 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher13522027877987796422/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher10089210984939549556/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher13522027877987796422/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher13522027877987796422/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher10089210984939549556/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher10089210984939549556/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:40:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.26 16:40:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/knoldus/.cache/metals/bsp.trace.json[0m
+[0m2021.11.26 16:40:07 INFO  time: Connected to build server in 0.13s[0m
+[0m2021.11.26 16:40:07 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.11.26 16:40:08 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.11.26 16:40:08 INFO  time: indexed workspace in 1.17s[0m
+[0m2021.11.26 16:40:10 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.11.26 16:40:10 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.26 16:40:10 INFO  time: code lens generation in 1.15s[0m

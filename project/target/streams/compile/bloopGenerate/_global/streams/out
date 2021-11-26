@@ -1,4 +1,4 @@
-[debug] [sbtassignment-build] Classpath dependencies List()
-[debug] [sbtassignment-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'sbtassignment-build' to '/home/knoldus/Knoldus/sbtAssignment/project/.bloop/sbtassignment-build.json'
-[success] Generated .bloop/sbtassignment-build.json
+[0m[[0m[0mdebug[0m] [0m[0m[sbtassignment-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[sbtassignment-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'sbtassignment-build' to '/home/knoldus/Knoldus/sbtAssignment/project/.bloop/sbtassignment-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/sbtassignment-build.json[0m
